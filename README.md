@@ -1,5 +1,6 @@
 docker-oracle-xe-11g
 ============================
+This is a fork of wnameless/oracle-xe-11g.  The only difference is that the password is `password`
 
 Oracle Express Edition 11g Release 2 on Ubuntu 16.04 LTS
 
@@ -7,7 +8,7 @@ This **Dockerfile** is a [trusted build](https://registry.hub.docker.com/u/wname
 
 ### Installation(with Ubuntu 16.04)
 ```
-docker pull wnameless/oracle-xe-11g
+docker pull guywithnose/oracle-xe-11g
 ```
 
 ### Installation(with older Ubuntu 14.04.4)
@@ -31,12 +32,12 @@ hostname: localhost
 port: 49161
 sid: xe
 username: system
-password: oracle
+password: password
 ```
 
 Password for SYS & SYSTEM
 ```
-oracle
+password
 ```
 
 Login by SSH
